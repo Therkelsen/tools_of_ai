@@ -1,0 +1,79 @@
+Confusion Matrix (rows = true labels, columns = predicted labels):
+        bicycle bus     lawn_mower      motorcycle      pickup_truck    rocket  streetcar       tank    tractor train
+bicycle 72      0       0       6       0       0       0       0       0       1
+bus     1       63      0       1       4       0       5       1       0       0
+lawn_mower      0       0       72      0       1       0       0       0       2       1
+motorcycle      1       0       1       79      0       0       0       0       0       0
+pickup_truck    0       2       0       0       75      0       1       1       1       2
+rocket  1       0       0       0       0       78      0       1       0       0
+streetcar       0       8       0       0       0       0       69      1       0       4
+tank    0       0       1       0       1       2       1       76      1       1
+tractor 1       0       2       1       0       1       1       0       65      1
+train   0       0       0       0       0       0       4       1       0       72
+TP: [72 63 72 79 75 78 69 76 65 72]
+FP: [ 4 10  4  8  6  3 12  5  4 10]
+TN: [704 702 707 698 699 704 693 699 711 700]
+FN: [ 7 12  4  2  7  2 13  7  7  5]
+
+Metrics Based on Confusion Matrix:
+Accuracy: 0.9161
+
+Class: bicycle
+  Precision:  0.9474
+  Recall:     0.9114
+  Specificity:0.9944
+  F1-score:   0.9290
+
+Class: bus
+  Precision:  0.8630
+  Recall:     0.8400
+  Specificity:0.9860
+  F1-score:   0.8514
+
+Class: lawn_mower
+  Precision:  0.9474
+  Recall:     0.9474
+  Specificity:0.9944
+  F1-score:   0.9474
+
+Class: motorcycle
+  Precision:  0.9080
+  Recall:     0.9753
+  Specificity:0.9887
+  F1-score:   0.9405
+
+Class: pickup_truck
+  Precision:  0.9259
+  Recall:     0.9146
+  Specificity:0.9915
+  F1-score:   0.9202
+
+Class: rocket
+  Precision:  0.9630
+  Recall:     0.9750
+  Specificity:0.9958
+  F1-score:   0.9689
+
+Class: streetcar
+  Precision:  0.8519
+  Recall:     0.8415
+  Specificity:0.9830
+  F1-score:   0.8466
+
+Class: tank
+  Precision:  0.9383
+  Recall:     0.9157
+  Specificity:0.9929
+  F1-score:   0.9268
+
+Class: tractor
+  Precision:  0.9420
+  Recall:     0.9028
+  Specificity:0.9944
+  F1-score:   0.9220
+
+Class: train
+  Precision:  0.8780
+  Recall:     0.9351
+  Specificity:0.9859
+  F1-score:   0.9057
